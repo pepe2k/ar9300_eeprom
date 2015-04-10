@@ -114,4 +114,4 @@ This project is Free Software, licensed under version 2 of the **GNU General Pub
 Credits
 -------
 
-* .
+* [pepe2k](https://github.com/pepe2k) contribution with ART partitions.
