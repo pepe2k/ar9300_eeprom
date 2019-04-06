@@ -95,9 +95,9 @@ Analysis, conclusions and speculations
 --------------------------------------
 
 Based on the limited information obtained so far (ART of one WDR4310 and of two WDR3400) the result for now is:
-* Most likely, that the calibration data contained in ART partition are not unique per router, but vary according to the revision of the board.
+* Even ART partitions of exactly the same boards with all marks matching can differ. 
 * The data are loaded directly without any CRC consistency facilitating the changes.
-* The MAC address is not on the partition ART allowing test and distribute modified versions without bothering to adjust or be touting the MAC address.
+* The MAC address is not on the ART partition on most TP-Link models allowing testing and distributing modified versions without bothering to adjust or be touting the MAC address.
 * Various fields presented identical in the three ART images, some are relevant to the correct operation of wireless, others are obsolete or not used by the drive. I did not spend much time with them as it is not the focus.
 * The fields 'Caps Tuning' (2.4GHz and 5GHz) are to the accuracy of the crystal clock. Different revisions of board normally will have these different parameters. A good indication that change the ART with another router without looking at the revision of the board may be bad idea.
 * The tables 'Calibration' (2.4GHz and 5GHz) are to calibrate / compensate asymmetries between the chains and deviations from expected. Has significant variation between board revisions. Confirming that change the ART with another router without looking at the revision of the board is bad idea.
